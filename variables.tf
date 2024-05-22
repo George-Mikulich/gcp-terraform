@@ -13,3 +13,13 @@ variable "zone" {
   type        = string
   default     = "europe-central2-b"
 }
+variable "project" {
+  description = "Name of gcp project"
+  type        = string
+  default     = "primal-catfish-423408-p7"
+}
+variable "members" {
+  description = "Allowed Members"
+  type        = list(string)
+  default     = []
+}
